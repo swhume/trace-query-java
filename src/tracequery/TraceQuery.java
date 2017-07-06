@@ -138,9 +138,9 @@ public class TraceQuery {
             System.err.println("Unable to locate or read the trace-node.xql. " + ex.getMessage());
             System.exit(0);
         } catch (IOException ex) {
-            System.err.println("Unable to read the trace-node-unique.xql or write the ouput to " + outputFileName + ". " + ex.getMessage());
+            System.err.println("Unable to read the " + qryName + " or write the ouput to " + outputFileName + ". " + ex.getMessage());
         } catch (QueryException ex) {
-            System.err.println("Error reading results from the trace-node XQuery. " + ex.getMessage());
+            System.err.println("Error reading results from the " + qryName + " XQuery. " + ex.getMessage());
         }
         return count;
     }
